@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -286,7 +286,6 @@ namespace Assignment
             //Console.WriteLine(" A \n B \n C \n D \n");
             int count = 0;
             string q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12;
-            string half;
             for (int i = 0; i < 9; i++)
             {
                 Console.WriteLine("");
@@ -302,7 +301,7 @@ namespace Assignment
                 Console.Write("\n       :");
                 q1 = Console.ReadLine();
                 q1 = q1.ToUpper();           // what ever the user inputs converts to and Upper case
-                if (q1.Contains("a"))      // if users input is correct then displays next question
+                if (q1.Contains("A"))      // if users input is correct then displays next question
                 {
                     Console.WriteLine("\n\tCorrect answer");
                     count = 50;
@@ -417,8 +416,8 @@ namespace Assignment
                                         Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
                                         Console.WriteLine("");
                                         Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                        Console.WriteLine(" │	A Febuary 2004 \t\t\t\t\t\t\t\tB June 2004                 │");
-                                        Console.WriteLine(" │	C Febuary 2005 \t\t\t\t\t\t\t\tD December 2003             │");
+                                        Console.WriteLine(" │	A Blue \t\t\t\t\t\tB Red              │");
+                                        Console.WriteLine(" │	C Yellow \t\t\t\t\t\t\tD Green                      │");
                                         Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
                                         Console.Write("       :");
                                         q7 = Console.ReadLine();
@@ -437,13 +436,13 @@ namespace Assignment
                                             Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
                                             Console.WriteLine("");
                                             Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                            Console.WriteLine(" │	A Febuary 2004 \t\t\t\t\t\t\t\tB June 2004                 │");
-                                            Console.WriteLine(" │	C Febuary 2005 \t\t\t\t\t\t\t\tD December 2003             │");
+                                            Console.WriteLine(" │	A Febuary 2004 \t\t\t\t\t\tB June 2004              │");
+                                            Console.WriteLine(" │	C Febuary 2005 \t\t\t\t\t\t\tD December 2003                      │");
                                             Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
                                             Console.Write("\n       :");
                                             q8 = Console.ReadLine();
                                             q8 = q8.ToLower();
-                                            if (q8.Contains("a"))
+                                            if (q8.Contains("A"))
                                             {
                                                 Console.WriteLine("\n\tCorrect answer");
                                                 count = 50000;
@@ -456,111 +455,20 @@ namespace Assignment
                                                 Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
                                                 Console.WriteLine("");
                                                 Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                Console.WriteLine(" │	A 2008 \t\t\t\t\t\t\t\t\tB 2016                      │");
-                                                Console.WriteLine(" │	C 2009 \t\t\t\t\t\t\t\t\tD 2012                      │");
+                                                Console.WriteLine(" │	A 2008 \t\t\t\t\t\tB 2016              │");
+                                                Console.WriteLine(" │	C 2009 \t\t\t\t\t\t\tD 2012                      │");
                                                 Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
+                                                Console.WriteLine("\tA 2008 \n\n \tB 2016 \n\n \tC 2009  \n\n \tD 2012 ");
                                                 Console.Write("\n       :");
                                                 q9 = Console.ReadLine();
                                                 q9 = q9.ToLower();
-                                                if (q9.Contains("c"))
+                                                if (q9.Contains("C"))
                                                 {
                                                     Console.WriteLine("\n\tCorrect answer");
                                                     count = 250000;
                                                     Console.WriteLine($"\tYou have just won ${count}");
                                                     Thread.Sleep(2000);
                                                     Console.Clear();
-                                                    Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                    Console.WriteLine(" │\tQuestion 10                                                                                         │");
-                                                    Console.WriteLine(" │\tWhen was Minecraft released to the public?                                                          |");
-                                                    Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                                                    Console.WriteLine("");
-                                                    Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                    Console.WriteLine(" │	A 17 May 2009 \t\t\t\t\t\t\t\t\tB 18 May 2009       │");
-                                                    Console.WriteLine(" │	C 19 May 2009 \t\t\t\t\t\t\t\t\tD 20 May 2009       │");
-                                                    Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                                                    Console.Write("\n       :");
-                                                    q10 = Console.ReadLine();
-                                                    q10 = q10.ToLower();
-                                                    if(q10.Contains("a"))
-                                                    {
-                                                        Console.WriteLine("\n\tCorrect answer");
-                                                        count = 500000;
-                                                        Console.WriteLine($"\tYou have just won ${count}");
-                                                        Thread.Sleep(2000);
-                                                        Console.Clear();
-                                                        Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                        Console.WriteLine(" │\tQuestion 11                                                                                         │");
-                                                        Console.WriteLine(" │\tWho is the Goodfella's Director                                                                     |");
-                                                        Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                                                        Console.WriteLine("");
-                                                        Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                        Console.WriteLine(" │	A Quentin Tarantino \t\t\t\t\t\t\tB Robert Anthony De Niro Jr │");
-                                                        Console.WriteLine(" │	C Martin Charles \t\t\t\t\t\t\tD Martin Scorsese           │");
-                                                        Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                                                        Console.Write("\n       :");
-                                                        q11 = Console.ReadLine();
-                                                        q11 = q11.ToLower();
-                                                        if (q11.Contains("d"))
-                                                        {
-                                                            Console.WriteLine("\n\tCorrect answer");
-                                                            count = 750000;
-                                                            Console.WriteLine($"\tYou have just won ${count}");
-                                                            Thread.Sleep(2000);
-                                                            Console.Clear();
-                                                            Console.WriteLine("");
-                                                            Console.WriteLine("  _______ _            ______ _             _    ____                  _   _             ");
-                                                            Console.WriteLine(" |__   __| |          |  ____(_)           | |  / __ \\                | | (_)            ");
-                                                            Console.WriteLine("    | |  | |__   ___  | |__   _ _ __   __ _| | | |  | |_   _  ___  ___| |_ _  ___  _ __  ");
-                                                            Console.WriteLine("    | |  | '_ \\ / _ \\ |  __| | | '_ \\ / _` | | | |  | | | | |/ _ \\/ __| __| |/ _ \\| '_ \\ ");
-                                                            Console.WriteLine("    | |  | | | |  __/ | |    | | | | | (_| | | | |__| | |_| |  __/\\__ \\ |_| | (_) | | | |");
-                                                            Console.WriteLine("    |_|  |_| |_|\\___| |_|    |_|_| |_|\\__,_|_|  \\____\\_\\__,_|\\___||___/\\__|_|\\___/|_| |_| ");
-                                                            Thread.Sleep(3000);
-                                                            Console.Clear();
-                                                            Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                            Console.WriteLine(" │\tQuestion 12                                                                                         │");
-                                                            Console.WriteLine(" │\tWhat is 10101×20202                                                                     |");
-                                                            Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                                                            Console.WriteLine("");
-                                                            Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                                                            Console.WriteLine(" │	A 402,060,204 \t\t\t\t\t\t\t\t\tB 204,060,402       │");
-                                                            Console.WriteLine(" │	C 060,204,402 \t\t\t\t\t\t\t\t\tD 060,402,204       │");
-                                                            Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                                                            q12 = Console.ReadLine();
-                                                            q12 = q12.ToLower();
-                                                            if (q12.Contains("b"))
-                                                            {
-                                                                Console.WriteLine("\n\tCorrect answer");
-                                                                count = 1000000;
-                                                                Console.WriteLine($"\tYou have just won ${count}");
-                                                                Thread.Sleep(2000);
-                                                                Console.Clear();
-                                                            }
-                                                            
-                                                            else
-                                                            {
-                                                                Console.WriteLine($"\n You are going home with ${count}");
-                                                                Thread.Sleep(2500);
-                                                                Console.Clear();
-                                                                Main();
-
-                                                            }
-                                                        }
-                                                        else
-                                                        {
-                                                            Console.WriteLine($"\n You are going home with ${count}");
-                                                            Thread.Sleep(2500);
-                                                            Console.Clear();
-                                                            Main();
-                                                        }
-                                                    }
-                                                    else
-                                                    {
-                                                        Console.WriteLine($"\n You are going home with ${count}");
-                                                        Thread.Sleep(2500);
-                                                        Console.Clear();
-                                                        Main();
-
-                                                    }
                                                 }
                                                 else
                                                 {
@@ -626,14 +534,6 @@ namespace Assignment
                         Main();
                     }
                 }
-                else if (q1.Contains("fifty"))
-                {
-                    Console.WriteLine(" ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-                    Console.WriteLine(" │	A Spain \t\t\t\t\t\t\t\tB                    │");
-                    Console.WriteLine(" │	  \t\t\t\t\t\t\t\tD England                   │");
-                    Console.WriteLine(" └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-                }
-
                 else
                 {
                     Console.WriteLine($"\n You are going home with ${count}");
